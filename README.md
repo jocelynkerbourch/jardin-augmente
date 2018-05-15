@@ -40,6 +40,7 @@ Créer un fichier parameters.php grace au modele parameters.dist.php
 ```
 
 Créer un fichier app/config/.htpasswd (http://www.htaccesstools.com/htpasswd-generator/)
+
 Créer un fichier app/.htaccess
 ```
 ...
