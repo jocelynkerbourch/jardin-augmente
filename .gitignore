@@ -1,0 +1,7 @@
+logs
+*.log
+*.sublime-project
+*.sublime-workspace
+.DS_Store
+app/config/parameters.php
+www/bower_components

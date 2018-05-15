@@ -1,0 +1,32 @@
+	 <div class="container">
+
+	  <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-spring-blue rounded box-shadow">
+        <div class="lh-100">
+          <h6 class="mb-0 text-white lh-100">Jardin augmenté</h6>
+        </div>
+      </div>
+
+	 <div class="my-3 p-3 bg-white rounded box-shadow">
+	        <h6 class="border-bottom border-gray pb-2 mb-0">Puits</h6>
+
+
+			
+			<?php foreach ($levels as $level){ ?>
+	        <div class="media text-muted pt-3">
+	          <img class="mr-2 rounded" style="width: 32px; height: 32px;" src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2232%22%20height%3D%2232%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%20preserveAspectRatio%3D%22none%22%3E%3Cg%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20fill%3D%22%23<?php echo $level['color'];  ?>%22%3E%3C%2Frect%3E%3C%2Fg%3E%3C%2Fsvg%3E" data-holder-rendered="true">
+	          <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+	            <strong class="d-block text-gray-dark"><?php echo $level['date'];  ?></strong>
+	            Le niveau est de <strong><?php echo $level['level'];  ?> cm</strong>
+	          </p>
+	        </div>
+
+	        <?php } ?>
+
+	        <small class="d-block text-right mt-3">
+	          <a href="?request=1">
+	          	<button type="button" class="btn btn-info btn-sm">Demander un relevé</button>
+	      	  </a>
+	        </small>
+	 </div>
+
+    </div><!-- /.container -->
