@@ -4,4 +4,4 @@ logs
 *.sublime-workspace
 .DS_Store
 app/config/parameters.php
-www/bower_components
+app/www/bower_components
