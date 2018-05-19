@@ -42,15 +42,19 @@ class waterlevel {
 
 	private function makeLevel($row){
 		$level=array();
-		$level['level']=$row['waterlevel'];
+		$level['level']=$this->calcLevel($row['waterlevel']);
 		$level['date']=$row['waterlevel_date'];
 
 		$color = 'afd7b4';
-		if ($level['level']<120) $color = 'ffd162';
-		if ($level['level']<100) $color = 'fb9692';
+		if ($level['level']<LEVEL_WARNING) $color = 'ffd162';
+		if ($level['level']<LEVEL_CIRTICAL) $color = 'fb9692';
 		$level['color']=$color;
 
 		return $level;
+	}
+
+	private function calcLevel($waterlevel){
+		return LEVEL_INSTALL_ARDUINO - $waterlevel;
 	}
 
 }

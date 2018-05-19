@@ -1,6 +1,7 @@
 <?php
 define('__ROOT__', dirname(dirname(__FILE__))); 
 require_once(__ROOT__.'/config/parameters.php');
+require_once(__ROOT__.'/config/config.php');
 require_once(__ROOT__.'/src/library/DB.php');
 require_once(__ROOT__.'/src/controllers/waterlevelController.php');
 
