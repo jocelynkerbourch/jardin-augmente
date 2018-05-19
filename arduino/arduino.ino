@@ -6,9 +6,9 @@
 
 ESP8266WiFiMulti WiFiMulti;
 
-const char* ssid     = "MONAL2";
-const char* password = "Les8TomatesFarcies";
-const char* host     = "flute-a-bec.kwaoo.me";
+const char* ssid     = "";
+const char* password = "";
+const char* host     = "";
 const int httpPort   = 80;
 const int trigPin = 2;  //D4
 const int echoPin = 0;  //D3
